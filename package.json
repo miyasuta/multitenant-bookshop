@@ -10,7 +10,8 @@
     "@sap/cds-mtxs": "^1.9",
     "express": "^4",
     "@sap/xssec": "^3",
-    "passport": "^0"
+    "passport": "^0",
+    "@sap/cds-hana": "^2"
   },
   "devDependencies": {
     "@sap/cds-dk": "^7",
@@ -24,7 +25,8 @@
     "requires": {
       "multitenancy": true,
       "[production]": {
-        "auth": "xsuaa"
+        "auth": "xsuaa",
+        "db": "hana"
       }
     }
   }
