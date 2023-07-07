@@ -18,7 +18,9 @@
     "sqlite3": "^5"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "build": "mbt build -t gen --mtar mta.tar",
+    "deploy": "cf deploy gen/mta.tar -f"
   },
   "cds": {
     "profile": "with-mtx-sidecar",
